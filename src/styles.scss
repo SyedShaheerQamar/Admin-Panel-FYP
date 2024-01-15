@@ -1,0 +1,214 @@
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+$primary-color: #400099;
+$base-bg-color: #ebf1f4;
+$hover-bg-color:#4d0fa3;
+$white-color:#ffffff;
+$error-color:#dc2626;
+
+*{
+    margin: 0;
+}
+body{
+    background-color: $base-bg-color;
+}
+.body-position{
+padding-left:60px;
+width: 100%;
+}
+
+.bg-color>.p-button{
+    background-image: linear-gradient(to bottom right, rgba(101,216,188,255), rgba(2,72,133,255))!important;
+}
+.bg-color>.p-button:hover{
+    background-color:$hover-bg-color!important;
+}
+.bg-o-color>.p-button{
+color: $primary-color;
+border-color: $primary-color;
+}
+.bg-b-color>.p-button:hover{
+background-color: $primary-color;
+}
+.bg-b-color>.p-button{
+    background-image: linear-gradient(to bottom right, rgba(101,216,188,255), rgba(2,72,133,255));
+}
+.hook>.p-element>.p-toolbar{
+    border-radius:0px;
+    background-color:$white-color;
+}
+.table-head>.p-element>.p-toolbar{
+    padding:10px;
+    margin-bottom: 10px;
+}
+.main{
+    background-color:$base-bg-color;
+    height: 100%;
+    padding:40px;
+}
+.body-card{
+    background-color: $white-color;
+    padding:30px;
+    border-radius: 10px;
+}
+.body-card-tile{
+    background-color: rgb(235,241,244);
+    padding:30px;
+    border-radius: 10px;
+}
+.body-holder{
+    width: 100%;
+}
+
+.max-w-full{
+    width: 100%;
+    margin-bottom: 35px;
+}
+.h-color{
+color: rgba(53,147,215,255);
+}
+.mr{
+margin-right: 5px;
+}
+.ml{
+    margin-left: 5px;
+}
+.form-hook>.p-element>.p-dropdown{
+    width:100%
+}
+.form-hook>.p-element>.p-multiselect{
+    width:100%
+}
+.form-hook>.p-element>.p-dropdown>.p-icon-wrapper{
+    display:none;
+}
+.form-hook>.p-element>.p-password>.p-inputtext{
+width: 100%;
+}
+.form-hook>.p-element>.p-password{
+    width: 100%;
+}
+.form-hook>.p-element>.p-password>.p-icon-wrapper{
+top: 37%
+}
+
+.form-hook>.p-element>.p-inputswitch {
+    margin: 7px 16px;
+}
+
+// p-fileupload>.p-fileupload>.p-button{
+//     width: 100%!important;
+//     height: 50px!important;
+//     background-color: $primary-color;
+// }
+// p-fileupload>.p-fileupload>.p-button:hover{
+//     background-color: $hover-bg-color;
+// }
+// p-fileupload>.p-fileupload{
+//     width: 100%!important;
+//     height: 50px!important;
+// }
+// p-fileupload{
+//     width: 100%!important;
+//     height: 50px!important;
+// }
+
+p-fileupload>.p-fileupload>.p-fileupload-buttonbar{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+p-fileupload>.p-fileupload>.p-fileupload-buttonbar>.p-button{
+    background-color: $primary-color;
+}
+
+p-fileupload>.p-fileupload>.p-fileupload-buttonbar>.p-element>.p-button{
+    background-color: $primary-color;
+}
+p-fileupload>.p-fileupload>.p-fileupload-content>.p-fileupload-files>.ng-star-inserted>.p-fileupload-row>div>.p-button{
+    background-color: $primary-color;
+}
+
+.color-red{
+    color:$error-color;
+}
+.form-hook>.p-inputwrapper>.p-password>.p-password-panel{
+  display:none;
+}
+.form-hook>.p-dialog-mask>.p-element>.p-dialog-content>.p-element>.p-button{
+    float: right;
+}
+.form-hook>.p-inputwrapper>.p-calendar{
+    width: 100%;
+}
+
+
+.form-hook1>.p-inputwrapper{
+    width: 100%;
+}
+.form-hook1>.p-inputwrapper>.p-password>.p-inputtext{
+    width: 100%;
+}
+.form-hook1>.p-inputwrapper>.p-password{
+    width: 100%;
+}
+.form-hook1>.p-element>.p-password>.p-icon-wrapper{
+    top: 37%
+}
+
+.color-warning{
+color:#f59e0b;
+}
+
+.red{
+    // background-color: $error-color;
+    color: $error-color;
+}
+.form-hook2>.p-element>.p-dropdown{
+    width:200px
+}
+.form-hook2>.p-element>.p-dropdown>.p-icon-wrapper{
+    display:none;
+}
+
+.form-hook>.p-element>.p-inputnumber{
+    width: 100%;
+}
+
+.custom-loader-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+  
+.custom-loader-content img {
+    width: 200x; /* Adjust the width of your custom loader */
+    height: 300px; /* Adjust the height of your custom loader */
+    opacity: 0.5;
+}
+
+.order-search-panel {
+    padding: 1% 1% 2%;
+    border-bottom: 1px solid #e3e3e3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-search {
+    height: fit-content;
+    width: 25%;
+    padding: 10px 1%;
+    border: 0;
+    outline: 0;
+    position: relative;
+    top: 6px;
+    background: #e5e5e58c;
+}
+
+.order-body {
+    background-color: white;
+}

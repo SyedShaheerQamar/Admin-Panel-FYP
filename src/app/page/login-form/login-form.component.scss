@@ -1,0 +1,49 @@
+@import '../../../styles.scss';
+
+.bg-p-color{
+    background-image: linear-gradient(to bottom right, rgba(101,216,188,255), rgba(2,72,133,255));
+// background-color:$primary-color;
+}
+.bg-w-color{
+    background-color:$white-color;
+}
+.login-form{
+    border-radius: 8px solid;
+    width: 80%;
+    background-color:$white-color;
+    border-radius: 10px;
+    padding:20px;
+    border: 2px solid transparent; /* Set an initial border */
+    transition: border 0.3s ease;
+    
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: #4ad8cb;
+    }
+    50% {
+        border-color: #2477ac;
+    }
+    100% {
+        border-color: #0033aa;
+    }
+}
+
+
+.animated-border {
+    animation: borderAnimation 2s infinite;
+}
+
+
+.r-color{
+color:$error-color;
+}
+.sidebar-img {
+    width: 100%;
+    height: auto;
+    max-width: 100vw; /* Set maximum width to 100% of the viewport width */
+    max-height: 100vh; /* Set maximum height to 100% of the viewport height */
+    display: block; /* Ensures the image is treated as a block-level element */
+    margin: 0 auto;
+  }

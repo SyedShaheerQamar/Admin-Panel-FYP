@@ -1,0 +1,7 @@
+<ngx-ui-loader [fgsTemplate]="foregroundSpinner" fgsColor="#4d0fa3" [fgsSize]="60" [bgsOpacity]="0" blur="0" fgsPosition="center-center"  fgsType="three-strings" overlayColor="rgba(255,255,255,0)" [hasProgressBar]="false"></ngx-ui-loader>
+<ng-template #foregroundSpinner>
+    <div class="custom-loader-content">
+        <img src="../../../assets/loader.gif" alt="Custom Loader GIF" />
+    </div>
+</ng-template>
+<router-outlet></router-outlet>
