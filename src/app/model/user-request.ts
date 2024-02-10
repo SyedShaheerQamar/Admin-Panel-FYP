@@ -5,6 +5,7 @@ export interface UserRequest {
     request: string|null|undefined,
     approvedbySystem: boolean|null|undefined,
     approvedbyAdmin: boolean|null|undefined,
+    price: number|null|any;
     category: []|null|undefined,
     bids: []|null|undefined,
 }

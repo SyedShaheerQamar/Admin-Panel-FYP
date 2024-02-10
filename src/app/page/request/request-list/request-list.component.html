@@ -23,11 +23,6 @@
                     <div class="p-toolbar-group-start">
                       <h2 class="h-color">Request List</h2>
                     </div>
-                    <!-- <div class="p-toolbar-group-end">
-                        <p-button class="bg-b-color" routerLink="/add-location">
-                          <i class="bi bi-plus-lg" style="font-size: 20px;font-weight: bold;"></i>&nbsp;Add Location
-                        </p-button>
-                    </div> -->
                 </p-toolbar>
             </div>
 
@@ -40,6 +35,7 @@
                   <th class="text-center">Request</th>
                   <th class="text-center">Approved by System</th>
                   <th class="text-center">Approved by Admin</th>
+                  <th class="text-center">Price</th>
                   <th class="text-center">Category</th>
                   <th class="text-center">Bids</th>
                   <th class="text-center">Action</th>
@@ -51,11 +47,12 @@
                   <td class="text-center">{{ request.request }}</td>
                   <td class="text-center">{{ request.approvedBySystem }}</td>
                   <td class="text-center">{{ request.approvedByAdmin }}</td>
+                  <td class="text-center">{{ request.price }}</td>
                   <td class="text-center">{{ request.category==[]?request.category:"Not available" }}</td>
                   <td class="text-center">{{ request.bids==[]?request.bids:"Not bids" }}</td>
 
                   <td class="text-center"> 
-                    <p-button icon="bi bi-check2" class='mr' styleClass="p-button-rounded p-button-success p-button-text p-button-raised">
+                    <p-button (click)="showDialogForApprove(request.id)" icon="bi bi-check2" class='mr' styleClass="p-button-rounded p-button-success p-button-text p-button-raised">
                      
                     </p-button>
                      <p-button (click)="showDialog(request.id)" icon="bi bi-trash" class='ml' styleClass="p-button-rounded p-button-danger p-button-text p-button-raised">
@@ -74,9 +71,18 @@
 
 <p-dialog header="Delete Permission" class="form-hook" [(visible)]="visible" [style]="{width: '50vw'}">
   <h4 class="mb-4">
-     Are sure you want to delete this Location on id {{lID}}
+     Are sure you want to delete this request on id {{lID}}
   </h4>
   <p-button (click)="deleteRequestByID(lID)" class="bg-b-color">
     <i  class="bi bi-trash" style="font-size: 20px;font-weight: bold;"></i>&nbsp;Confirm Delete
+  </p-button>
+</p-dialog>
+
+<p-dialog header="Approve Permission" class="form-hook" [(visible)]="approveVisible" [style]="{width: '50vw'}">
+  <h4 class="mb-4">
+     Are sure you want to approve this request on id {{ApproveId}}
+  </h4>
+  <p-button (click)="approveRequestByID(ApproveId)" class="bg-b-color">
+    Approve
   </p-button>
 </p-dialog>

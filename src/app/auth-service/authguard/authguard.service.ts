@@ -18,27 +18,10 @@ export class AuthguardService {
 
   PermissionRoutes: { permission: string, route: string[] }[] = [
     { permission: 'Dash Board', route: ['/home', '/'] },
-    { permission: 'Domestic Shipment', route: ['/domestic-shipping', '/domestic-shipping-history/:id', '/add-domestic-shipping', '/update-domestic-shipping/:id', '/add-domestic-attachments/:id', '/view-domestic-shipment/:id'] },
-    { permission: 'International Shipment By Road', route: ['/international-shipment-by-road', '/international-shipment-history-by-road/:id', '/add-international-shipment-by-road', '/update-international-shipment-by-road/:id', '/add-international-by-road-attachments/:id', '/international-summary-by-road-attachment/:id', '/view-international-road/:id'] },
-    { permission: 'International Shipment By Air', route: ['/international-shipment-by-air', '/international-shipment-history-by-air/:id', '/add-international-shipment-by-air', '/update-international-shipment-by-air/:id', '/add-international-by-air-attachments/:id', '/international-summary-by-air-attachment/:id', '/view-international-air/:id'] },
-    { permission: 'Domestic Summary', route: ['/domestic-summary', '/add-attachments/:id', '/update-domestic-shipping-for-summary/:id'] },
-    { permission: 'International Summary By Air', route: ['/international-summary-by-air', '/update-international-air-shipping-for-summary/:id'] },
-    { permission: 'International Summary By Road', route: ['/international-summary-by-road', '/update-international-road-shipping-for-summary/:id'] },
-    { permission: 'User', route: ['/user', '/add-user', '/edit-user/:id'] },
-    { permission: 'Driver', route: ['/driver', '/add-driver', '/edit-driver/:id'] },
-    { permission: 'Category', route: ['/category'] },
-    { permission: 'Location', route: ['/location', '/add-location', '/edit-location/:id'] },
-    { permission: 'Location Port', route: ['/location-port', '/add-location-port', '/edit-location-port/:id'] },
-    { permission: 'Shipment Status', route: ['/shipment-status', '/add-shipment-status', '/edit-shipment-status/:id'] },
-    { permission: 'Vehicle Type', route: ['/vehicle-type', '/add-vehicle-type', '/edit-vehicle-type/:id'] },
-    { permission: 'Role', route: ['/role', '/edit-role/:id'] },
-    { permission: 'View Attachments', route: ['/view-attachments/:name/:through/:id'] },
-    { permission: 'ShipmentRoutes', route: ['/domestic-routes', '/add-domestic-routes', '/update-domestic-routes/:id'] },
-    { permission: 'ShipmentRoutesForAir', route: ['/international-routes-for-air', '/add-international-routes-for-air', '/update-international-routes-for-air/:id'] },
-    { permission: 'ShipmentRoutesForRoad', route: ['/international-routes-for-road', '/add-international-routes-for-road', '/update-international-routes-for-road/:id'] },
-    { permission: 'ProductField', route: ['/productFields', '/addProductField', '/updateProductField'] },
-    { permission: 'Email Management', route: ['/emailManagement'] }
-
+    { permission: 'User', route: ['/user', '/add-user'] },
+    { permission: 'Category', route: ['/category', '/add-category'] },
+    { permission: 'Request', route: ['/request'] },
+    
   ]
 
 
