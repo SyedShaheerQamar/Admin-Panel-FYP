@@ -39,7 +39,8 @@
                   
                   <th class="text-center">Id</th>
                   <th class="text-center">Name</th>
-                  <th class="text-center">Sub category</th>
+                  <th class="text-center">Icons</th>
+                  <th class="text-center">Backgorund</th>
 
                   <th class="text-center">Actions</th>
                 </tr>
@@ -48,11 +49,12 @@
                 <tr>
                   <td class="text-center">{{ itemCategory.id }}</td>
                   <td class="text-center">{{ itemCategory.categoryName }}</td>
-                  <td class="text-center">{{ itemCategory.subCategory==[]?itemCategory.subCategory:"No Sub Category" }}</td>
+                  <td class="text-center">{{ itemCategory.icons == null ? "No Icon" : itemCategory.icons }}</td>
+                  <td class="text-center">{{ itemCategory.backgorund == null ? "No Backgorund" : itemCategory.backgorund }}</td>
                   <td class="text-center"> 
-                    <!-- <p-button [routerLink]="['/edit-driver',drivers.id]" icon="bi bi-pen" class='mr' styleClass="p-button-rounded p-button-success p-button-text p-button-raised">
+                    <!-- <p-button  icon="bi bi-pen" class='mr' styleClass="p-button-rounded p-button-success p-button-text p-button-raised">
                      
-                    </p-button>-->
+                    </p-button> -->
                      <p-button (click)="showDialog( itemCategory.id )" icon="bi bi-trash" class='ml' styleClass="p-button-rounded p-button-danger p-button-text p-button-raised">
                     
                      </p-button> 
